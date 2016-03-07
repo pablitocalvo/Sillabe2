@@ -16,10 +16,10 @@
         android:text="SI"
         android:textSize="20dp"
         android:id="@+id/bottoneSI"
-        android:layout_alignParentTop="true"
+        android:onClick="cliccatoBottoneSi"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="cliccatoBottoneSi"/>
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -42,12 +42,12 @@
         android:layout_height="wrap_content"
         android:text="BA"
 
-        android:textSize="60dp"
+        android:textSize="80dp"
         android:textStyle="bold"
         android:id="@+id/textSillaba"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textEsatte"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="65dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textEsatte"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -65,7 +65,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textErrate"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bottoneNo"
+        android:layout_alignEnd="@+id/bottoneNo" />
 </RelativeLayout>

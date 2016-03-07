@@ -26,8 +26,20 @@ public class MainActivity extends AppCompatActivity
 
         esatte=errate=0;
         prove=0;
-
-        sillabePossibili=Fonemi.FONEMI_B;  //TODO: estrarla dalla configurazione del gioco o livello
+        sillabePossibili= new String[]{};
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_B);
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_C);
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_D);
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_P);
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_M);
+        sillabePossibili=Fonemi.unisci(sillabePossibili,
+                Fonemi.FONEMI_T);
+        //TODO: estrarla dalla configurazione del gioco o livello
 
         textSillaba.setText(Fonemi.fonemaCasuale(sillabePossibili));
 
